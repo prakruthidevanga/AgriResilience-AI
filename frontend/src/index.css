@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #1e2a21;
+  background: #f6f6f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --ink: #1e2a21;
+  --muted: #687169;
+  --paper: #f6f6f0;
+  --line: #d9ded5;
+  --green: #224d38;
+  --deep: #172e24;
+  --lime: #d0ec6d;
+  --mono: 'DM Mono', monospace;
+  --heading: 'Manrope', sans-serif;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button, a, input, select { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+button { color: inherit; }
+::selection { color: var(--deep); background: var(--lime); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
